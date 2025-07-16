@@ -1,0 +1,114 @@
+/* Основний контейнер таймера */
+.countdown-container {
+  margin: 40px 0 42px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Контейнер для всіх груп (Дні, Години, Хвилини) */
+.countdown-timer {
+  display: flex;
+  gap: 25px; /* Збільшимо відстань між групами, щоб було схоже на Figma */
+}
+
+/* Кожна група (Дні, Години, Хвилини) */
+.countdown-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.digit-block-wrap{
+  display: flex;
+  gap: 10px;
+}
+
+/* Блок для КОЖНОЇ окремої цифри */
+.digit-block {
+  display: inline-flex; /* Щоб цифри були в одному рядку, але кожен у своєму блоці */
+  justify-content: center;
+  align-items: center;
+  width: 85px; /* Ширина блоку для цифри, налаштуйте */
+  height: 135px; /* Висота блоку для цифри, налаштуйте */
+  background: linear-gradient(180deg, #0F1125 -25%, rgba(15, 17, 37, 0.1) 100%);
+  color: #FFFFFF; /* Колір цифри, як на Figma */
+  font-family: 'Digital-7', monospace; /* Або той шрифт, що у Figma */
+  font-size: 115.55px; /* Розмір цифри, налаштуйте */
+  font-weight: bold; /* Жирний шрифт */
+  border-radius: 8px; /* Невелике заокруглення кутів, якщо є */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Легка тінь для об'ємності */
+  margin: 0 2px; /* Невеликий відступ між сусідніми блоками цифр */
+  border: 0.15px solid #FFFFFF
+}
+
+
+
+/* Підписи під цифрами ("Днів", "Годин", "Хвилин") */
+.countdown-label {
+  color: #FFFFFF; /* Колір підпису */
+  margin-top: 25px; /* Відступ від блоків цифр */
+  font-family: 'Lato', sans-serif; /* Або той шрифт, що у Figma */
+  font-weight: 500; /* Напівжирний або звичайний */
+  font-style: Medium;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 6%;
+
+}
+
+
+/* Стилі для повідомлення після закінчення таймера */
+.countdown-ended {
+  font-size: 1.8em;
+  color: #28a745;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Стилі для "COMING SOON..." */
+.coming-soon-text {
+  font-size: 2.2em; /* Налаштуйте розмір */
+  font-weight: 600; /* Напівжирний */
+  color: #333; /* Колір тексту */
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Можливо, є міжлітерний інтервал */
+  margin-bottom: 20px;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+  .countdown-timer {
+    flex-wrap: wrap; /* Дозволяє переносити групи на новий рядок */
+    justify-content: center;
+    gap: 15px; /* Менший відступ для мобільних */
+  }
+
+  .digit-block {
+    width: 45px; /* Зменшити розмір блоків на мобільних */
+    height: 60px;
+    font-size: 3em; /* Зменшити розмір шрифту */
+  }
+
+  .countdown-label {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+
+  .coming-soon-text {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+  }
+}
+
+/* Адаптивність для дуже малих екранів, якщо потрібно */
+@media (max-width: 480px) {
+  .digit-block {
+    width: 40px;
+    height: 55px;
+    font-size: 2.5em;
+  }
+}
+

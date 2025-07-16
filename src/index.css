@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Digital-7'; /* Ім'я, яке ви будете використовувати в font-family */
+  src: url('./assets/fonts/digital_7.ttf') format('truetype'); /* Шлях до вашого файлу шрифту та його формат */
+  font-weight: normal; /* Задайте відповідну вагу, якщо у вас є різні файли для ваг */
+  font-style: normal;  /* Задайте стиль */
+  font-display: swap;  /* Важливо для кращого досвіду користувача (FOUT) */
+}
+
+@font-face {
+  font-family: 'Digital-7';
+  src: url('./assets/fonts/Digital_Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Digital-7';
+  src: url('./assets/fonts/digital_7/digital_7mono.ttf') format('truetype');
+  font-weight: bold; 
+  font-style: normal;
+  font-display: swap;
+}
