@@ -37,6 +37,7 @@ function App() {
           </div>
         </div>
       </div>
+      <img className="placeholder-woomen-background-mobile"></img>
     </div>
       
     </>

@@ -143,44 +143,37 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 
   .logo-signature{
-    font-size: 1em;
+    font-size: 0.7em;
+    margin: 0 0 10px 0;
   }
 
   .content-title{
-    font-size: 1.5em;
     margin: 0 0 30px 0;
   }
 
-  .content-description{
-    font-size: 1.5em;
+  .content-title,
+  .content-description,
+  .content-signature
+  {
+    font-size: 1em;
   }
 
   .content-signature{
     width: 100%;
-    font-size: 1.25em;
   }
 
   .content-social-block{
-    width: 70%;
+    width: 100%;
   }
 
 }
 
-@media (max-width: 825px) {
-     .logo-signature{
-      font-size: 0.6em;
-      margin: 0 0 10px 0;
-    }
+@media (max-width: 768px) {
+  .placeholder-woomen-background{
+    display: none;
+  }
 
-    .content-title,
-    .content-description,
-    .content-signature
-    {
-      font-size: 1em;
-    }
-
-
-
+  
 }
 
 

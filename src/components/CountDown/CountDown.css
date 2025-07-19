@@ -97,7 +97,7 @@
 @media (max-width: 1010px){ 
   .countdown-timer {
     width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   
   .digit-block {
