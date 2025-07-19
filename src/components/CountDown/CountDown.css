@@ -1,12 +1,12 @@
 /* Основний контейнер таймера */
-.countdown-container {
+/* .countdown-container {
   width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
 /* Контейнер для всіх груп (Дні, Години, Хвилини) */
 .countdown-timer {
@@ -14,6 +14,9 @@
   justify-content: space-around;
   display: flex;
   gap: 25px; /* Збільшимо відстань між групами, щоб було схоже на Figma */
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 /* Кожна група (Дні, Години, Хвилини) */
@@ -112,30 +115,41 @@
   }
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .countdown-timer {
-    flex-wrap: wrap; 
+    width: 75%;
+    flex-direction: row;
+    padding-bottom: 10px;
+    gap: 10px;
+  }
+
+  .countdown-container{
+    flex-direction: row;
+  }
+
+  .digit-block-wrap{
+    width: 100%;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
   }
 
   .digit-block {
-    width: 45px; 
-    height: 60px;
-    font-size: 3em;
+    width: 35px; 
+    height: 50px;
+    font-size: 2.5em;
+  }
+
+  .countdown-group{
+    width: 33% ;
   }
 
   .countdown-label {
-    font-size: 0.9em;
+    font-size: 1.1em;
     margin-top: 10px;
   }
-
-  .coming-soon-text {
-    font-size: 1.8em;
-    letter-spacing: 1px;
-  }
+ 
 }
-*/
+
 
 
 /* @media (max-width: 480px) {

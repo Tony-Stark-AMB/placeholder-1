@@ -8,7 +8,7 @@ function App() {
     <>
     <div className="placeholder-container">
       <img className="placeholder-woomen-background" src="./main_bg_placeholder.png" alt="" />
-      <div className="placeholder-right-shadow">
+      <div className="placeholder-shadow">
         <div className="content-container">
           <img src="/logo.svg" alt="Placeholder Logo" className="logo-img" />
           <h2 className="logo-signature">Приватний нотаріус, медіатор, перекладач</h2>
@@ -20,26 +20,25 @@ function App() {
           <p className="content-signature">Слідкуйте за нами в соцмережах</p>
             <div className="content-social-block">
               <div className="social-block-wrap">
-                <a href="#">
+                <a className="social-block-link" href="#">
                   <img src="./social_icons/TickTock.svg" className="social-block-img" alt="TikTok" />
                 </a>
               </div>
               <div className="social-block-wrap">
-                <a href="#">
+                <a  className="social-block-link"href="#">
                   <img src="./social_icons/Thread.svg" className="social-block-img" alt="Threads" />
                 </a>
               </div>
               <div className="social-block-wrap">
-                <a href="#">
+                <a  className="social-block-link"href="#">
                   <img src="./social_icons/Instagram.svg" className="social-block-img" alt="Instagram" />
                 </a>
               </div>
           </div>
         </div>
       </div>
-      <img className="placeholder-woomen-background-mobile"></img>
+      <img className="placeholder-woomen-background-mobile" src="./main_bg_placeholder-mobile.png"/>
     </div>
-      
     </>
     
   )

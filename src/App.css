@@ -32,7 +32,11 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 100vh;
 }
 
-.placeholder-right-shadow{
+.placeholder-woomen-background-mobile{
+  display: none;
+}
+
+.placeholder-shadow{
   position: absolute;
   right: 0;
   top: 0;
@@ -96,8 +100,6 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 1.35em;
   line-height: 100%;
   letter-spacing: 0.05em;
-  padding-top: 36px;
-  border-top: 1px solid #ffffff;
   margin: 30px auto 0;
   color: #FFFFFF;
 }
@@ -110,7 +112,9 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .social-block-wrap{
-  background-color: #FFFFFF33;
+  display: grid;
+  place-items: center;
+  background-color: #ffffff81;
   padding: 8.25px;
   border-radius: 15px;
   transition: .3s ease-in-out;
@@ -143,7 +147,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 
   .logo-signature{
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin: 0 0 10px 0;
   }
 
@@ -169,11 +173,87 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+
+  .content-container{
+    padding-top: 40px;
+    width: 100%;
+  }
+
+  .content-title,
+  .content-description{
+    font-size: 1.1em;
+  }
+
+  .content-description{
+    margin: 0 0 10px 0;
+  }
+
   .placeholder-woomen-background{
     display: none;
   }
+  .placeholder-woomen-background-mobile{
+    width: 100%;
+    margin-top: auto;
+    display: block;
+  }
 
-  
+  .logo-img{
+    width: 290px;
+  }
+
+  .logo-signature{
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+
+  .placeholder-shadow{
+    height: 82vh;
+    background: linear-gradient(to top,  rgba(51, 141, 150, 0) 0%,#338D96 66.29% );
+  }
+
+  .content-signature{
+    width: 100%;
+    font-size: 0.9em;
+    margin: 15px 0;
+  }
+
+  .content-social-block{
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .social-block-wrap{
+    background-color: #FFFFFF33;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 7.5px;
+  }
+
+  .social-block-img{
+    width: inherit;
+    height: inherit;
+  }
+
+  .social-block-link{
+    width: 25.75px;
+    height: 25.75px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .placeholder-shadow{
+    background: linear-gradient(to top,  rgba(51, 141, 150, 0) 0%, #338D96 50.29%);
+  }
+}
+
+@media (max-width: 450px) {
+  .placeholder-shadow{
+ 
+    background: linear-gradient(360deg, rgba(51, 141, 150, 0) 0%, #338D96 29.29%);
+  }
 }
 
 

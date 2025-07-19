@@ -48,7 +48,7 @@ const Countdown = ({ targetDate }) => {
   };
 
   return (
-    <div className="countdown-container">
+    <>
       {hasCountdownEnded ? (
         <div className="countdown-ended">
           <h2>Ми вже тут!</h2>
@@ -79,7 +79,7 @@ const Countdown = ({ targetDate }) => {
          
         </div>
       )}
-    </div>
+    </>
   );
 };
 
