@@ -44,10 +44,10 @@
   font-family: 'Digital-7', monospace; /* Або той шрифт, що у Figma */
   font-size: 5.3125em; /* Розмір цифри, налаштуйте */
   font-weight: bold; /* Жирний шрифт */
-  border-radius: 8px; /* Невелике заокруглення кутів, якщо є */
+  border-radius: 4.25px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Легка тінь для об'ємності */
   margin: 0 2px; /* Невеликий відступ між сусідніми блоками цифр */
-  border: 0.85px solid #FFFFFF
+  box-shadow: 1px 1px, inset 1px 1px #ccc;
 }
 
 
