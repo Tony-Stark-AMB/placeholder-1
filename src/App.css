@@ -7,6 +7,7 @@ body, html, #root {
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 16px;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -15,63 +16,16 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .placeholder-container {
+  position: relative;
   display: flex;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
   height: 100vh; /* Висота екрану */
-  /* max-width: 1440px;
-  max-height: 1100px; */
-  width: 100vw;  /* Ширина екрану */
-  background-color: #f0f2f5; /* Виберіть колір фону з Figma */
+  width: 100%;
+  background-repeat: no-repeat;
   text-align: center;
-  padding: 20px 0;
   box-sizing: border-box; /* Щоб padding не збільшував розмір контейнера */
-}
-
-.logo-wrap{
-  margin: 0 0 68px 0;
-}
-
-.logo-img{
-  height: auto;
-}
-
-.logo-signature{
-  font-weight: 400;
-  font-size: 26px;
-  font-style: normal;
-  letter-spacing: 0.5px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.placeholder-content{
-  width: 60%;
-  margin: 35px 54px 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: 100vh;
-}
-
-.placeholder-title {
-  max-width: 80%;
-  font-weight: 500;
-  letter-spacing: 0;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 40px; /* Адаптуйте розмір шрифту */
-  text-align: center;
-  margin: 0 0 103px 0;
-  color: #FFFFFF;; /* Колір тексту, якщо він відрізняється від загального */
-}
-
-.placeholder-description {
-  font-weight: 400;
-  font-size: 40px;
-  letter-spacing: 0;
-  margin-right: 20%;
-  color: #FFFFFF;
 }
 
 .placeholder-woomen-background{
@@ -80,37 +34,84 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .placeholder-right-shadow{
   position: absolute;
-  left: 20%;
+  right: 0;
   top: 0;
-  transform: translate(-20%, 0);
+  transform: translate(0, 0);
   z-index: 2;
-  height: 100vw;
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
   background: linear-gradient(90deg, rgba(51, 141, 150, 0) 20.16%, rgba(51, 141, 150, 0.2) 24.9%, rgba(51, 141, 150, 0.5) 29.68%, rgba(51, 141, 150, 0.7) 36.88%, #338D96 48.33%);
 }
 
-.placeholder-signature{
-  width: 65%;
+
+.logo-img{
+  width: 90%;
+  height: auto;
+}
+
+.logo-signature{
+  width: 100%;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 100%;
+  font-size: 1.325em;
+  line-height: 1;
+  font-style: normal;
+  /* letter-spacing: 0.5px; */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+
+.content-container{
+  background-repeat: no-repeat;
+  width: 40%;
+  margin: 0 0 0 auto;
+  padding: 35px 54px 40px 0;
+  height: 100vh;
+  box-sizing: content-box;
+}
+
+.content-title {
+  max-width: 100%;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-size: 2em; /* Адаптуйте розмір шрифту */
+  text-align: center;
+  margin: 0 0 83px 0;
+  color: #FFFFFF;; /* Колір тексту, якщо він відрізняється від загального */
+}
+
+.content-description {
+  font-weight: 400;
+  font-size: 2em;
   letter-spacing: 0;
-  padding-top: 56px;
+  color: #FFFFFF;
+  margin: 0 0 40px 0;
+}
+
+.content-signature{
+  width: 75%;
+  font-weight: 400;
+  font-size: 1.35em;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  padding-top: 36px;
   border-top: 1px solid #ffffff;
-  margin-right: 2%;
+  margin: 30px auto 0;
   color: #FFFFFF;
 }
 
-.placeholder-social-block{
-  width: 30%;
+.content-social-block{
+  width: 40%;
   display: flex;
   justify-content: space-around;
-  margin: 20px 20% 0 0 ;
+  margin: 30px auto 0;
 }
 
 .social-block-wrap{
   background-color: #FFFFFF33;
-  padding: 11.25px;
+  padding: 8.25px;
   border-radius: 15px;
   transition: .3s ease-in-out;
   cursor: pointer;
@@ -120,24 +121,67 @@ p, h1, h2, h3, h4, h5, h6 {
   scale: 1.2;
 }
 
-
-
-/* Адаптивність для мобільних пристроїв */
-@media (max-width: 768px) {
-  .placeholder-title {
-    font-size: 2em;
+@media (max-width: 1300px) {
+  .content-container{
+    width: 45%;
   }
-  .placeholder-description {
+}
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 1120px) {
+  .content-container{
+    width: 50%;
+  } 
+}
+
+@media (max-width: 1010px) {
+  .content-container{
+    width: 40%;
+  } 
+
+  .logo-img{
+    width: 70%;
+  }
+
+  .logo-signature{
     font-size: 1em;
   }
-  .placeholder-image {
-    max-width: 150px;
-  }
-}
 
-@media (min-width: 1440px) {
-  .placeholder-woomen-background{
-    width: 50vw;
+  .content-title{
+    font-size: 1.5em;
+    margin: 0 0 30px 0;
   }
 
+  .content-description{
+    font-size: 1.5em;
+  }
+
+  .content-signature{
+    width: 100%;
+    font-size: 1.25em;
+  }
+
+  .content-social-block{
+    width: 70%;
+  }
+
 }
+
+@media (max-width: 825px) {
+     .logo-signature{
+      font-size: 0.6em;
+      margin: 0 0 10px 0;
+    }
+
+    .content-title,
+    .content-description,
+    .content-signature
+    {
+      font-size: 1em;
+    }
+
+
+
+}
+
+
+
