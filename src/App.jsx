@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <div className="placeholder-container">
-      <img className="placeholder-woomen-background" src="./main_bg_placeholder.png" alt="" />
+      <img className="placeholder-woomen-background" src="./main_bg_placeholder_2.png" alt="" />
       <div className="placeholder-shadow">
         <div className="content-container">
           <img src="/logo.svg" alt="Placeholder Logo" className="logo-img" />

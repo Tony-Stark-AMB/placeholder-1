@@ -16,7 +16,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .placeholder-container {
-  position: relative;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -35,7 +34,7 @@ p, h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-.placeholder-shadow{
+.placeholder-shadow {
   position: absolute;
   right: 0;
   top: 0;
@@ -43,7 +42,12 @@ p, h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(90deg, rgba(51, 141, 150, 0) 9.16%, rgba(51, 141, 150, 0.2) 13.9%, rgba(51, 141, 150, 0.5) 18.68%, rgba(131, 150, 152, 0.7) 25.88%, #338D96 37.33%);
+  background: linear-gradient(90deg,
+  rgba(51, 141, 150, 0.1) 9.16%,
+  rgba(51, 141, 150, 0.2) 13.9%,
+  rgba(51, 141, 150, 0.3) 18.68%,
+  /* rgba(131, 150, 152, 0.8) 25.88%, */
+  #338D96 37.33%);
 }
 
 
@@ -170,7 +174,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 
   .content-title{
-    margin: 0 0 43px 0;
+    margin: 0 0 25px 0;
   }
 
   .content-title,
@@ -192,6 +196,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 
   .logo-img{
+    margin-top: 10px;
     width: 290px;
   }
 
@@ -244,8 +249,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 450px) {
+  .content-container{
+    padding: 0;
+  }
+
   .placeholder-shadow{
- 
     background: linear-gradient(360deg, rgba(51, 141, 150, 0) 18%, #338D96 34.29%);
   }
 }
