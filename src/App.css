@@ -293,7 +293,7 @@ p, h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-size: 1.5em; /* Адаптуйте розмір шрифту */
     text-align: center;
-    margin: 0 auto 43px auto;
+    margin: 0 auto 83px auto;
     color: #FFFFFF;; /* Колір тексту, якщо він відрізняється від загального */
   }
 
