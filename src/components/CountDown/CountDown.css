@@ -1,10 +1,16 @@
 /* Контейнер для всіх груп (Дні, Години, Хвилини) */
-.countdown-timer {
+.countdown-timer-wrap{
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.countdown-timer {
+  /* width: 55%; */
   justify-content: space-around;
   display: flex;
   gap: 25px; /* Збільшимо відстань між групами, щоб було схоже на Figma */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding-bottom: 40px;
   border-bottom: 1px solid #FFFFFF;
 }
@@ -27,8 +33,8 @@
   display: inline-flex; /* Щоб цифри були в одному рядку, але кожен у своєму блоці */
   justify-content: center;
   align-items: center;
-  width: 65px; /* Ширина блоку для цифри, налаштуйте */
-  height: 115px; /* Висота блоку для цифри, налаштуйте */
+  width: 55px; /* Ширина блоку для цифри, налаштуйте */
+  height: 105px; /* Висота блоку для цифри, налаштуйте */
   background: linear-gradient(180deg, #0F1125 -35%, rgba(15, 17, 37, 0.1) 100%);
   color: #FFFFFF; /* Колір цифри, як на Figma */
   font-family: 'Digital-7', monospace; /* Або той шрифт, що у Figma */
@@ -72,11 +78,11 @@
   margin-bottom: 20px;
 }
 
-@media (max-width: 1400px){
+/* @media (max-width: 1400px){
   .countdown-container {
     width: 100%;
   }
-}
+} */
 
 
 /* @media (min-width: 1441px) {
@@ -87,23 +93,6 @@
   }
 }
 */
-@media (max-width: 1010px){ 
-  .countdown-timer {
-    width: 100%;
-    flex-direction: column;
-  }
-  
-  .digit-block {
-    width: 65px;
-    height: 80px;
-    font-size: 4em; 
-  }
-
-  .countdown-label{
-    width: 100%;
-    font-size: 1.1em;
-  }
-}
 
 @media (max-width: 768px) {
   .countdown-timer {
@@ -140,7 +129,7 @@
  
 }
 
-@media (max-height: 1000px){
+/* @media (max-height: 1000px){
   .countdown-timer {
     width: 55%;
     flex-direction: row;
@@ -157,7 +146,7 @@
     width: 100%;
     font-size: 1.4em;
   }
-}
+} */
 
 
 /* @media (max-width: 480px) {

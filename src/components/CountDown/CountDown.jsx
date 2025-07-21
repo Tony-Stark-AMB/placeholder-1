@@ -55,6 +55,7 @@ const Countdown = ({ targetDate }) => {
           <p>Ласкаво просимо на оновлений сайт!</p>
         </div>
       ) : (
+      <div className="countdown-timer-wrap">
         <div className="countdown-timer">
           <div className="countdown-group">
             {renderTwoDigitNumber(timeLeft.days)}
@@ -78,6 +79,7 @@ const Countdown = ({ targetDate }) => {
           </div> */}
          
         </div>
+      </div>
       )}
     </>
   );

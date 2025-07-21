@@ -92,7 +92,7 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 1.5em;
   letter-spacing: 0;
   color: #FFFFFF;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
 }
 
 .content-signature{
@@ -107,7 +107,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .content-social-block{
   width: 15%;
-  margin: 10px auto 0;
+  margin: 20px auto 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,6 +120,8 @@ p, h1, h2, h3, h4, h5, h6 {
   padding: 5px;
   border-radius: 7.5px;
   transition: .3s ease-in-out;
+  display: grid;
+  place-items: center;
 }
 
 .social-block-img{
@@ -142,43 +144,20 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 /* Адаптивність для мобільних пристроїв */
-@media (max-width: 1120px) {
+/* @media (max-width: 1120px) {
   .content-container{
     width: 50%;
   } 
-}
+} */
 
-@media (max-width: 1010px) {
-  .content-container{
-    width: 40%;
-  } 
-
-  .logo-img{
-    width: 70%;
-  }
-
-  .logo-signature{
-    font-size: 0.8em;
-    margin: 0 0 10px 0;
-  }
-
+@media (max-width: 1210px) {
   .content-title{
-    margin: 0 0 30px 0;
-  }
-
-  .content-title,
-  .content-description,
-  .content-signature
-  {
-    font-size: 1em;
-  }
-
-  .content-signature{
     width: 100%;
+    margin: 0 0 83px 0;
   }
 
   .content-social-block{
-    width: 100%;
+    width: 35%;
   }
 
 }
@@ -188,6 +167,11 @@ p, h1, h2, h3, h4, h5, h6 {
   .content-container{
     padding-top: 40px;
     width: 100%;
+    background: none;
+  }
+
+  .content-title{
+    margin: 0 0 43px 0;
   }
 
   .content-title,
