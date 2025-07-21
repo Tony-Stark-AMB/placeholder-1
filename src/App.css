@@ -19,7 +19,6 @@ p, h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: flex;
   align-items: center;
-  max-width: 1440px;
   margin: 0 auto;
   height: 100vh; /* Висота екрану */
   width: 100%;
@@ -44,51 +43,53 @@ p, h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(90deg, rgba(51, 141, 150, 0) 20.16%, rgba(51, 141, 150, 0.2) 24.9%, rgba(51, 141, 150, 0.5) 29.68%, rgba(131, 150, 152, 0.7) 36.88%, #338D96 48.33%);
+  background: linear-gradient(90deg, rgba(51, 141, 150, 0) 10.16%, rgba(51, 141, 150, 0.2) 14.9%, rgba(51, 141, 150, 0.5) 19.68%, rgba(131, 150, 152, 0.7) 26.88%, #338D96 38.33%);
 }
 
 
 .logo-img{
-  width: 90%;
+  width: 50%;
   height: auto;
 }
 
 .logo-signature{
   width: 100%;
   font-weight: 400;
-  font-size: 1.325em;
+  font-size: 1.1em;
   line-height: 1;
   font-style: normal;
-  /* letter-spacing: 0.5px; */
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 48px;
+  margin-bottom: 38px;
+  margin-top: -10px;
 }
 
 .content-container{
+  width: 55%;
+  background: linear-gradient(90deg, rgba(51, 141, 150, 0) 20.16%, rgba(51, 141, 150, 0.2) 24.9%, rgba(51, 141, 150, 0.5) 19.68%, rgba(51, 141, 150, 0.7) 26.88%, #338D96 38.33%);
+  padding: 35px 27px 40px 0;
   background-repeat: no-repeat;
-  width: 40%;
   margin: 0 0 0 auto;
-  padding: 35px 54px 40px 0;
   height: 100vh;
   box-sizing: content-box;
 }
 
 .content-title {
-  max-width: 100%;
+  width: 60%;
   font-weight: 500;
   letter-spacing: 0.05rem;
+  line-height: 1;
   text-transform: uppercase;
-  font-size: 2em; /* Адаптуйте розмір шрифту */
+  font-size: 1.8em;
   text-align: center;
-  margin: 0 0 83px 0;
-  color: #FFFFFF;; /* Колір тексту, якщо він відрізняється від загального */
+  margin: 0 auto 83px auto;
+  color: #FFFFFF; 
 }
 
 .content-description {
   font-weight: 400;
-  font-size: 2em;
+  font-size: 1.5em;
   letter-spacing: 0;
   color: #FFFFFF;
   margin: 0 0 40px 0;
@@ -97,28 +98,38 @@ p, h1, h2, h3, h4, h5, h6 {
 .content-signature{
   width: 75%;
   font-weight: 400;
-  font-size: 1.35em;
+  font-size: 1.05em;
   line-height: 100%;
   letter-spacing: 0.05em;
-  margin: 30px auto 0;
+  margin: 35px auto 0;
   color: #FFFFFF;
 }
 
 .content-social-block{
-  width: 40%;
+  width: 15%;
+  margin: 10px auto 0;
   display: flex;
-  justify-content: space-around;
-  margin: 30px auto 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .social-block-wrap{
-  display: grid;
-  place-items: center;
-  background-color: #ffffff81;
-  padding: 8.25px;
-  border-radius: 15px;
+  background-color: #FFFFFF33;
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 7.5px;
   transition: .3s ease-in-out;
-  cursor: pointer;
+}
+
+.social-block-img{
+  width: inherit;
+  height: inherit;
+}
+
+.social-block-link{
+  width: 20.75px;
+  height: 20.75px;
 }
 
 .social-block-wrap:hover{
@@ -256,64 +267,11 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (max-height: 1000px){
-  .placeholder-container{
-    max-width: 1000px;
-  }
-
-  .logo-img{
-    width: 75%;
-    height: auto;
-  }
-
-  .content-container{
-    width: 51%;
-    background: linear-gradient(90deg, rgba(51, 141, 150, 0) 20.16%, rgba(51, 141, 150, 0.2) 24.9%, rgba(51, 141, 150, 0.5) 29.68%, rgba(51, 141, 150, 0.7) 36.88%, #338D96 48.33%);
-    padding: 35px 27px 40px 0;
-  }
-
-  .logo-signature{
-    width: 100%;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 1;
-    font-style: normal;
-    /* letter-spacing: 0.5px; */
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 48px;
-    margin-top: -10px;
-  }
-
-  .content-title {
-    width: 90%;
-    font-weight: 500;
-    letter-spacing: 0.05rem;
-    text-transform: uppercase;
-    font-size: 1.5em; /* Адаптуйте розмір шрифту */
-    text-align: center;
-    margin: 0 auto 83px auto;
-    color: #FFFFFF;; /* Колір тексту, якщо він відрізняється від загального */
-  }
-
-  .content-description{
-    font-size: 1.5em;
-  }
-
-  .content-signature{
-    width: 75%;
-    font-weight: 400;
-    font-size: 1.05em;
-    line-height: 100%;
-    letter-spacing: 0.05em;
-    margin: 15px auto 0;
-    color: #FFFFFF;
-  }
+/* @media (max-height: 1000px){
   
   .content-social-block{
-    width: 45%;
-    margin: 20px auto 0;
+    width: 15%;
+    margin: 10px auto 0;
   }
 
   .social-block-wrap{
@@ -333,8 +291,7 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 20.75px;
     height: 20.75px;
   }
-
 }
-
+*/
 
 
