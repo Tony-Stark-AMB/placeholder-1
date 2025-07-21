@@ -150,6 +150,24 @@
  
 }
 
+@media (max-height: 1000px){
+  .countdown-timer {
+    width: 85%;
+    flex-direction: row;
+    padding-bottom: 30px;
+  }
+  
+  .digit-block {
+    width: 55px;
+    height: 90px;
+    font-size: 4em; 
+  }
+
+  .countdown-label{
+    width: 100%;
+    font-size: 1.4em;
+  }
+}
 
 
 /* @media (max-width: 480px) {

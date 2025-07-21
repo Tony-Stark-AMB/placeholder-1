@@ -44,7 +44,7 @@ p, h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(90deg, rgba(51, 141, 150, 0) 20.16%, rgba(51, 141, 150, 0.2) 24.9%, rgba(51, 141, 150, 0.5) 29.68%, rgba(51, 141, 150, 0.7) 36.88%, #338D96 48.33%);
+  background: linear-gradient(90deg, rgba(51, 141, 150, 0) 20.16%, rgba(51, 141, 150, 0.2) 24.9%, rgba(51, 141, 150, 0.5) 29.68%, rgba(131, 150, 152, 0.7) 36.88%, #338D96 48.33%);
 }
 
 
@@ -254,6 +254,86 @@ p, h1, h2, h3, h4, h5, h6 {
  
     background: linear-gradient(360deg, rgba(51, 141, 150, 0) 0%, #338D96 29.29%);
   }
+}
+
+@media (max-height: 1000px){
+  .placeholder-container{
+    max-width: 1000px;
+  }
+
+  .logo-img{
+    width: 75%;
+    height: auto;
+  }
+
+  .content-container{
+    width: 51%;
+    background: linear-gradient(90deg, rgba(51, 141, 150, 0) 20.16%, rgba(51, 141, 150, 0.2) 24.9%, rgba(51, 141, 150, 0.5) 29.68%, rgba(51, 141, 150, 0.7) 36.88%, #338D96 48.33%);
+    padding: 35px 27px 40px 0;
+  }
+
+  .logo-signature{
+    width: 100%;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1;
+    font-style: normal;
+    /* letter-spacing: 0.5px; */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+    margin-top: -10px;
+  }
+
+  .content-title {
+    width: 90%;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    font-size: 1.5em; /* Адаптуйте розмір шрифту */
+    text-align: center;
+    margin: 0 auto 43px auto;
+    color: #FFFFFF;; /* Колір тексту, якщо він відрізняється від загального */
+  }
+
+  .content-description{
+    font-size: 1.5em;
+  }
+
+  .content-signature{
+    width: 75%;
+    font-weight: 400;
+    font-size: 1.05em;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    margin: 15px auto 0;
+    color: #FFFFFF;
+  }
+  
+  .content-social-block{
+    width: 45%;
+    margin: 20px auto 0;
+  }
+
+  .social-block-wrap{
+    background-color: #FFFFFF33;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 7.5px;
+  }
+
+  .social-block-img{
+    width: inherit;
+    height: inherit;
+  }
+
+  .social-block-link{
+    width: 20.75px;
+    height: 20.75px;
+  }
+
 }
 
 
