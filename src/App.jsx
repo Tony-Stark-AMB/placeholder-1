@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import logo from "./assets/logo.svg";
 import Countdown from './components/CountDown/CountDown'
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <img className="placeholder-woomen-background" src="./main_bg_placeholder_2.png" alt="" />
       <div className="placeholder-shadow">
         <div className="content-container">
-          <img src="/logo.svg" alt="Placeholder Logo" className="logo-img" />
+          <img src={logo} alt="Placeholder Logo" className="logo-img" />
           <h2 className="logo-signature">Приватний нотаріус, медіатор, перекладач</h2>
           <h1 className="content-title">Інфо-платформа про право, рішення та зміни.</h1>
           <p className="content-description">
