@@ -20,17 +20,17 @@ function App() {
           <p className="content-signature">Слідкуйте за нами в соцмережах</p>
             <div className="content-social-block">
               <div className="social-block-wrap">
-                <a className="social-block-link" href="#">
+                <a className="social-block-link" href="https://www.tiktok.com/@korneenkova_nadia">
                   <img src="./social_icons/TickTock.svg" className="social-block-img" alt="TikTok" />
                 </a>
               </div>
               <div className="social-block-wrap">
-                <a  className="social-block-link"href="#">
+                <a  className="social-block-link"href="https://www.facebook.com/nk.prnotary">
                   <img src="./social_icons/Thread.svg" className="social-block-img" alt="Threads" />
                 </a>
               </div>
               <div className="social-block-wrap">
-                <a  className="social-block-link"href="#">
+                <a  className="social-block-link"href="https://www.instagram.com/nadia_korneenkova_notary/">
                   <img src="./social_icons/Instagram.svg" className="social-block-img" alt="Instagram" />
                 </a>
               </div>
