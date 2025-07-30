@@ -2,7 +2,7 @@ import './App.css'
 import Countdown from './components/CountDown/CountDown'
 
 function App() {
-  const websiteLaunchDate = new Date('2025-09-31T13:00:00+03:00').getTime();
+  const websiteLaunchDate = new Date('2025-09-30T13:00:00+03:00').getTime();
 
   return (
     <>
