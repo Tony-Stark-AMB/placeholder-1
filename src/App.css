@@ -169,13 +169,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
   .content-container{
     padding: 0;
-    padding-top: 40px;
+    padding-top: 20px;
     width: 100%;
     background: none;
   }
 
   .content-title{
-    margin: 0 0 25px 0;
+    width: 80%;
+    margin: 0 auto 45px auto;
   }
 
   .content-title,
