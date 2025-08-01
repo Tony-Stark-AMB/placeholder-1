@@ -1,4 +1,4 @@
-/* Контейнер для всіх груп (Дні, Години, Хвилини) */
+/*
 .countdown-timer-wrap{
   width: 100%;
   display: flex;
@@ -6,16 +6,13 @@
 }
 
 .countdown-timer {
-  /* width: 55%; */
   justify-content: space-around;
   display: flex;
-  gap: 25px; /* Збільшимо відстань між групами, щоб було схоже на Figma */
-  /* margin: 0 auto; */
+  gap: 25px; 
   padding-bottom: 40px;
   border-bottom: 1px solid #FFFFFF;
 }
 
-/* Кожна група (Дні, Години, Хвилини) */
 .countdown-group {
   display: flex;
   flex-direction: column;
@@ -28,39 +25,39 @@
   gap: 10px;
 }
 
-/* Блок для КОЖНОЇ окремої цифри */
+
 .digit-block {
-  display: inline-flex; /* Щоб цифри були в одному рядку, але кожен у своєму блоці */
+  display: inline-flex; 
   justify-content: center;
   align-items: center;
-  width: 55px; /* Ширина блоку для цифри, налаштуйте */
-  height: 105px; /* Висота блоку для цифри, налаштуйте */
+  width: 55px; 
+  height: 105px; 
   background: linear-gradient(180deg, #0F1125 -35%, rgba(15, 17, 37, 0.1) 100%);
-  color: #FFFFFF; /* Колір цифри, як на Figma */
-  font-family: 'Digital-7', monospace; /* Або той шрифт, що у Figma */
-  font-size: 5.3125em; /* Розмір цифри, налаштуйте */
-  font-weight: bold; /* Жирний шрифт */
+  color: #FFFFFF; 
+  font-family: 'Digital-7', monospace;
+  font-size: 5.3125em; 
+  font-weight: bold; 
   border-radius: 4.25px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Легка тінь для об'ємності */
-  margin: 0 2px; /* Невеликий відступ між сусідніми блоками цифр */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  margin: 0 2px; 
   box-shadow: 1px 1px, inset 1px 1px #ccc;
 }
 
 
 
-/* Підписи під цифрами ("Днів", "Годин", "Хвилин") */
+
 .countdown-label {
-  color: #FFFFFF; /* Колір підпису */
-  margin-top: 25px; /* Відступ від блоків цифр */
-  font-family: "Lato", sans-serif; /* Або той шрифт, що у Figma */
-  font-weight: 500; /* Напівжирний або звичайний */
+  color: #FFFFFF; 
+  margin-top: 25px; 
+  font-family: "Lato", sans-serif; 
+  font-weight: 500; 
   font-size: 1.65em;
   line-height: 100%;
   letter-spacing: 0.05rem;
 }
 
 
-/* Стилі для повідомлення після закінчення таймера */
+
 .countdown-ended {
   font-size: 1.8em;
   color: #ffffff;
@@ -68,31 +65,15 @@
   margin-top: 50px;
 }
 
-/* Стилі для "COMING SOON..." */
 .coming-soon-text {
-  font-size: 2.2em; /* Налаштуйте розмір */
-  font-weight: 600; /* Напівжирний */
-  color: #333; /* Колір тексту */
+  font-size: 2.2em; 
+  font-weight: 600; 
+  color: #333; 
   text-transform: uppercase;
-  letter-spacing: 2px; /* Можливо, є міжлітерний інтервал */
+  letter-spacing: 2px; 
   margin-bottom: 20px;
 }
 
-/* @media (max-width: 1400px){
-  .countdown-container {
-    width: 100%;
-  }
-} */
-
-
-/* @media (min-width: 1441px) {
-  .digit-block {
-    width: 65px; 
-    height: 80px;
-    font-size: 4em; 
-  }
-}
-*/
 
 @media (max-width: 768px) {
   .countdown-timer {
@@ -129,31 +110,143 @@
  
 }
 
-/* @media (max-height: 1000px){
-  .countdown-timer {
-    width: 55%;
-    flex-direction: row;
-    padding-bottom: 30px;
-  }
+*/
+
+@media (min-width: 320px){
   
-  .digit-block {
-    width: 55px;
-    height: 90px;
-    font-size: 4em; 
+  .countdown-timer-wrap{
+    display: flex;
+    justify-content: center;
   }
 
-  .countdown-label{
+  .countdown-timer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    flex-direction: row;
+    padding: 10px 0;
+    /* margin: 5px auto 0 auto; */
+    border: none;
+  }
+
+  .countdown-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .digit-block {
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    width: 25px; 
+    height: 45px; 
+    background: linear-gradient(180deg, #0F1125 -35%, rgba(15, 17, 37, 0.1) 100%);
+    color: #FFFFFF; 
+    font-family: 'Digital-7', monospace;
+    font-size: 2.2125em; 
+    font-weight: bold; 
+    border-radius: 1.5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    margin: 0 2px; 
+    box-shadow: 0.5px 0.5px, inset 0.5px 0.5px #ccc;
+  }
+
+  .countdown-group{
+    width: 30% ;
+  }
+
+  .countdown-label {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 375px){
+  .countdown-timer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    flex-direction: row;
+    padding: 10px 0;
+    border: none;
+  }
+
+  .digit-block-wrap{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .digit-block {
+    width: 35px; 
+    height: 65px; 
+    font-size: 3.2125em; 
+    font-weight: bold; 
+    border-radius: 1.5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    margin: 0 2px; 
+    box-shadow: 0.5px 0.5px, inset 0.5px 0.5px #ccc;
+  }
+
+  .countdown-label {
+    font-size: 1em;
+    margin-top: 5px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 425px) {
+  .countdown-timer {
+    max-width: 340px;
+  }
+}
+
+@media (min-width: 500px) {
+  .digit-block {
+    font-size: 2.2125em; 
+  }
+}
+
+@media (min-width: 768px){
+  .countdown-timer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-direction: row;
+    padding: 10px 0;
+    border: none;
+  }
+
+  .countdown-label {
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 968px) {
+  .countdown-timer {
+    max-width: 440px;
     width: 100%;
-    font-size: 1.4em;
   }
-} */
 
-
-/* @media (max-width: 480px) {
   .digit-block {
-    width: 40px;
-    height: 55px;
-    font-size: 2.5em;
+    width: 55px; 
+    height: 105px; 
+    font-size: 3.3125em; 
+    font-weight: bold; 
+    border-radius: 4.25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    box-shadow: 0.5px 0.5px, inset 0.5px 0.5px #ccc;
   }
-} */
 
+  .countdown-label {
+    font-size: 0.9em;
+    margin-top: 25px;
+    color: #ffffff;
+  }
+
+}

@@ -61,23 +61,14 @@ const Countdown = ({ targetDate }) => {
             {renderTwoDigitNumber(timeLeft.days)}
             <span className="countdown-label">Днів</span>
           </div>
-          {/* Розділювач, якщо потрібен (на Figma його немає між днями/годинами) */}
-          {/* <div className="separator">:</div> */}
           <div className="countdown-group">
             {renderTwoDigitNumber(timeLeft.hours)}
             <span className="countdown-label">Годин</span>
           </div>
-          {/* <div className="separator">:</div> */}
           <div className="countdown-group">
             {renderTwoDigitNumber(timeLeft.minutes)}
             <span className="countdown-label">Хвилин</span>
           </div>
-          {/* Згідно Figma, секунд немає, але якщо б були, то так: */}
-          {/* <div className="countdown-group">
-            {renderTwoDigitNumber(timeLeft.seconds)}
-            <span className="countdown-label">Секунд</span>
-          </div> */}
-         
         </div>
       </div>
       )}
