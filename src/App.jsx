@@ -1,5 +1,8 @@
 import './App.css';
 import logo from "./assets/logo.svg";
+import facebook from "./assets/social-icons/Facebook.svg";
+import ticktock from "./assets/social-icons/TickTock.svg";
+import instagram from "./assets/social-icons/Instagram.svg";
 import Countdown from './components/CountDown/CountDown'
 
 function App() {
@@ -22,17 +25,17 @@ function App() {
             <div className="content-social-block">
               <div className="social-block-wrap">
                 <a className="social-block-link" href="https://www.tiktok.com/@korneenkova_nadia">
-                  <img src="./social_icons/TickTock.svg" className="social-block-img" alt="TikTok" />
+                  <img src={ticktock} className="social-block-img" alt="TikTok" />
                 </a>
               </div>
               <div className="social-block-wrap">
                 <a  className="social-block-link"href="https://www.facebook.com/nk.prnotary">
-                  <img src="./social_icons/Thread.svg" className="social-block-img" alt="Threads" />
+                  <img src={facebook} className="social-block-img" alt="Facebook" />
                 </a>
               </div>
               <div className="social-block-wrap">
                 <a  className="social-block-link"href="https://www.instagram.com/nadia_korneenkova_notary/">
-                  <img src="./social_icons/Instagram.svg" className="social-block-img" alt="Instagram" />
+                  <img src={instagram} className="social-block-img" alt="Instagram" />
                 </a>
               </div>
           </div>
